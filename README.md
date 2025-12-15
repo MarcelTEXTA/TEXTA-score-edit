@@ -11,7 +11,8 @@ TEXTA score edit est un éditeur de partitions musicales codées en C#. Il perme
    ```bash
    git clone https://github.com/MarcelTEXTA/TEXTA-score-edit.git
     ```
-L'appliaation n'est pas encore publiée, vous devez donc la compiler vous-même à partir du code source.
+L'appliaation est disponible mais possède beaucoup de bugs, les fonctionnalités ne sont pas encore complètes.
+[TEXTA score edit v0.1.0 DevPreview](https://github.com/MarcelTEXTA/TEXTA-score-edit/raw/refs/heads/main/TEXTA_score_edit/publish/setup.exe)
 ## Contribution
 Les contributions sont les bienvenues ! Si vous souhaitez ajouter des fonctionnalités ou corriger des bugs, veuillez soumettre une pull request.
 ## Remerciements
@@ -30,7 +31,8 @@ TEXTA score edit is a C# coded music score editor. It allows users to create, ed
    ```bash
    git clone https://github.com/MarcelTEXTA/TEXTA-score-edit.git
     ```
-The application is not yet published, so you need to compile it yourself from the source code.
+The application is available but has many bugs, and the features are not yet complete.
+[TEXTA score edit v0.1.0 DevPreview](https://github.com/MarcelTEXTA/TEXTA-score-edit/raw/refs/heads/main/TEXTA_score_edit/publish/setup.exe)
 ## Contribution
 Contributions are welcome! If you want to add features or fix bugs, please submit a pull request.
 ## Acknowledgments
