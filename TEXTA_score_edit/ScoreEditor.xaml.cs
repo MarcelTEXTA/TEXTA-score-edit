@@ -1,4 +1,8 @@
-﻿using System;
+﻿// TEXTA score edit - Éditeur de partitions musicales
+// Copyright (C) 2025 Ethan Macaluso
+// Ce programme est seulement destiné à un usage éducatif et personnel.s
+
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
