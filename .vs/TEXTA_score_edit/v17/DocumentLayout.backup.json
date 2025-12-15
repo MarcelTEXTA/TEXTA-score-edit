@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\texta_score_edit\\scoreeditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|solutionrelative:texta_score_edit\\scoreeditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\texta_score_edit\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|solutionrelative:texta_score_edit\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|c:\\users\\family\\source\\repos\\texta_score_edit\\texta_score_edit\\scoreeditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|solutionrelative:texta_score_edit\\scoreeditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|c:\\users\\family\\source\\repos\\texta_score_edit\\texta_score_edit\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{307A9EA1-4213-4483-A03D-3F1A3A6456C7}|TEXTA_score_edit\\TEXTA_score_edit.csproj|solutionrelative:texta_score_edit\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "TEXTA_score_edit\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\MainWindow.xaml",
+              "RelativeToolTip": "TEXTA_score_edit\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-24T14:56:32.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ScoreEditor.xaml",
+              "DocumentMoniker": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\ScoreEditor.xaml",
+              "RelativeDocumentMoniker": "TEXTA_score_edit\\ScoreEditor.xaml",
+              "ToolTip": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\ScoreEditor.xaml",
+              "RelativeToolTip": "TEXTA_score_edit\\ScoreEditor.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-07T20:16:39.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\App.xaml",
+              "RelativeDocumentMoniker": "TEXTA_score_edit\\App.xaml",
+              "ToolTip": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\App.xaml",
+              "RelativeToolTip": "TEXTA_score_edit\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-07T19:54:08.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScoreEditor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\ScoreEditor.xaml.cs",
+              "RelativeDocumentMoniker": "TEXTA_score_edit\\ScoreEditor.xaml.cs",
+              "ToolTip": "C:\\Users\\Family\\source\\repos\\TEXTA_score_edit\\TEXTA_score_edit\\ScoreEditor.xaml.cs*",
+              "RelativeToolTip": "TEXTA_score_edit\\ScoreEditor.xaml.cs*",
+              "ViewState": "AgIAADcCAAAAAAAAAAAUwEcCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:27:02.844Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

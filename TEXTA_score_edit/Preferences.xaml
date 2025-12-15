@@ -1,0 +1,34 @@
+﻿<Window x:Class="TEXTA_score_edit.Preferences"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TEXTA_score_edit"
+        mc:Ignorable="d"
+        Title="Preferences" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <StackPanel Grid.Column="0" Background="#F0F0F0">
+            <ListBox>
+                <ListBoxItem Content="General"/>
+                <ListBoxItem Content="Editor"/>
+                <ListBoxItem Content="Shortcuts"/>
+                <ListBoxItem Content="About"/>
+            </ListBox>
+        </StackPanel>
+        <!-- Content Area -->
+        <Grid Grid.Column="1" Margin="10">
+            <TextBlock Text="Select a category from the sidebar to view preferences." 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center" 
+                       FontSize="16" 
+                       Foreground="Gray"/>
+            <ContentControl x:Name="ContentArea"/>
+        </Grid>
+    </Grid>
+</Window>
