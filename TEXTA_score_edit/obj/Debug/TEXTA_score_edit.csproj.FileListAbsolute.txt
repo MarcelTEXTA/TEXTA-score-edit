@@ -6,15 +6,11 @@ C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\bin\Debug\TEXTA_s
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\bin\Debug\ICSharpCode.AvalonEdit.dll
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\bin\Debug\ICSharpCode.AvalonEdit.xml
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.csproj.AssemblyReference.cache
-C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\MainWindow.g.cs
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\Preferences.g.cs
-C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\ScoreEditor.g.cs
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\App.g.cs
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit_MarkupCompile.cache
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit_MarkupCompile.lref
-C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\MainWindow.baml
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\Preferences.baml
-C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\ScoreEditor.baml
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.g.resources
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.Properties.Resources.resources
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.csproj.GenerateResource.cache
@@ -24,3 +20,8 @@ C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_s
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_sc.DD1145E4.Up2Date
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.exe
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.pdb
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.exe.config
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\MainWindow.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\ScoreEditor.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\MainWindow.baml
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\ScoreEditor.baml
