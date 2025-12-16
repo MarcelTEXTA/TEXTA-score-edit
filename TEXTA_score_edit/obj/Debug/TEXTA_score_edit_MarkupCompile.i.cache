@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\App.xaml
-3-1009801712
+3-949033840
 
-8-1666106861
+81599809663
 15-1938097898
-src\ui\MainWindow.xaml;Preferences.xaml;src\ui\ScoreEditor.xaml;
+src\ui\MainWindow.xaml;src\ui\Preferences.xaml;src\ui\ScoreEditor.xaml;
 
 True
 
