@@ -87,7 +87,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Preferences.xaml.cs">
+    <Compile Include="src\ui\Preferences.xaml.cs">
       <DependentUpon>Preferences.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\ui\ScoreEditor.xaml.cs">
@@ -105,7 +105,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Preferences.xaml">
+    <Page Include="src\ui\Preferences.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,24 +143,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\ciseaux.png" />
-    <Resource Include="Images\colle.png" />
-    <Resource Include="Images\gomme.png" />
-    <Resource Include="Images\insertions.png" />
-    <Resource Include="Images\note_inf.png" />
-    <Resource Include="Images\note_supp.png" />
-    <Resource Include="Images\oct_inf.png" />
-    <Resource Include="Images\oct_supp.png" />
-    <Resource Include="Images\selections.png" />
+    <Resource Include="res\ciseaux.png" />
+    <Resource Include="res\colle.png" />
+    <Resource Include="res\gomme.png" />
+    <Resource Include="res\insertions.png" />
+    <Resource Include="res\note_inf.png" />
+    <Resource Include="res\note_supp.png" />
+    <Resource Include="res\oct_inf.png" />
+    <Resource Include="res\oct_supp.png" />
+    <Resource Include="res\selections.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\annuler.png" />
-    <Resource Include="Images\imprimer.png" />
-    <Resource Include="Images\jouer.png" />
-    <Resource Include="Images\nouveau.png" />
-    <Resource Include="Images\ouvrir.png" />
-    <Resource Include="Images\rétablire.png" />
-    <Resource Include="Images\save.png" />
+    <Resource Include="res\annuler.png" />
+    <Resource Include="res\imprimer.png" />
+    <Resource Include="res\jouer.png" />
+    <Resource Include="res\nouveau.png" />
+    <Resource Include="res\ouvrir.png" />
+    <Resource Include="res\rétablire.png" />
+    <Resource Include="res\save.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
