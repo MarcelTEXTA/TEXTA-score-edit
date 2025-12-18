@@ -20,7 +20,7 @@ git clone https://github.com/MarcelTEXTA/TEXTA-score-edit.git
 ```
 - L'appliaation est disponible mais possède beaucoup de bugs, les fonctionnalités ne sont pas encore complètes.
 
-[TEXTA score edit v0.1.0 DevPreview](https://github.com/MarcelTEXTA/TEXTA-score-edit/raw/refs/heads/main/TEXTA_score_edit/publish/setup.exe)
+[TEXTA score edit v0.1.0 DevPreview](https://github.com/MarcelTEXTA/TEXTA-score-edit/raw/refs/heads/main/TEXTA_score_edit/TEXTA%20score%20edit%20v0.1.0%20Dev%20Preview%20(win%20x64).zip)
 
 
 ## Contribution
@@ -58,7 +58,7 @@ git clone https://github.com/MarcelTEXTA/TEXTA-score-edit.git
 ```
 - The application is available but has many bugs, and the features are not yet complete.
 
-[TEXTA score edit v0.1.0 DevPreview](https://github.com/MarcelTEXTA/TEXTA-score-edit/raw/refs/heads/main/TEXTA_score_edit/publish/setup.exe)
+[TEXTA score edit v0.1.0 DevPreview](https://github.com/MarcelTEXTA/TEXTA-score-edit/raw/refs/heads/main/TEXTA_score_edit/TEXTA%20score%20edit%20v0.1.0%20Dev%20Preview%20(win%20x64).zip)
 
 
 ## Contribution
