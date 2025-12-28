@@ -16,7 +16,7 @@ namespace TEXTA_score_edit
             AjouterOnglet();     // Ajoute le premier onglet normal
         }
 
-        private void AjouterOnglet(string cheminFichier = null)
+        public void AjouterOnglet(string cheminFichier = null)
         {
             string nomOnglet = cheminFichier != null ? Path.GetFileName(cheminFichier) : "Nouveau fichier";
 

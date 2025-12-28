@@ -87,12 +87,39 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="src\core\actions\NewFile.cs" />
+    <Compile Include="src\core\actions\OpenFile.cs" />
+    <Compile Include="src\core\actions\SaveAsFile.cs" />
+    <Compile Include="src\core\actions\SaveFile.cs" />
+    <Compile Include="src\ui\BibliothequeView.xaml.cs">
+      <DependentUpon>BibliothequeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\HomeScreen.xaml.cs">
+      <DependentUpon>HomeScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\PartagesView.xaml.cs">
+      <DependentUpon>PartagesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\PartitionsLocalesView.xaml.cs">
+      <DependentUpon>PartitionsLocalesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\ui\PartitionsView.xaml.cs">
+      <DependentUpon>PartitionsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\ui\Preferences.xaml.cs">
       <DependentUpon>Preferences.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\ui\ScoreEditor.xaml.cs">
       <DependentUpon>ScoreEditor.xaml</DependentUpon>
     </Compile>
+    <Page Include="src\ui\BibliothequeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\ui\HomeScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="src\ui\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -105,6 +132,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="src\ui\PartagesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\ui\PartitionsLocalesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\ui\PartitionsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="src\ui\Preferences.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

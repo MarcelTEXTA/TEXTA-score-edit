@@ -12,29 +12,173 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        <!-- Frame flottante -->
+        <Border x:Name="FloatingFrame" Grid.Row="0" Grid.RowSpan="2" Background="LightGray" BorderBrush="Black" BorderThickness="1" CornerRadius="5" Padding="10" Margin="10" Visibility="Hidden">
+            <StackPanel>
+                <TextBlock x:Name="FloatingFrameTitle" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+                <TextBlock x:Name="FloatingFrameContent" TextWrapping="Wrap" Margin="0,0,0,10"/>
+                <Button Content="Fermer" Width="100" HorizontalAlignment="Right" Click="CloseFloatingFrame"/>
+            </StackPanel>
+        </Border>
         <!-- Barre de menu supérieure -->
         <Grid Grid.Row="0" Margin="5">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <Button x:Name="OptBtn" Content="Options" Click="ShowMenu"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <Button x:Name="homeButton" Content="Home" Click="ShowHome"/>
+                <Menu x:Name="OptMenu" VerticalAlignment="Center" Background="White">
+                    <MenuItem Header="Options" Height="28">
+                        <MenuItem Header="Fichier">
+                            <MenuItem Header="Ouvrir un fichier"/>
+                            <MenuItem Header="Nouveau fichier"/>
+                            <MenuItem Header="Fermer le fichier"/>
+                            <MenuItem Header="Nouvelle version du fichier"/>
+                            <MenuItem Header="Enregister"/>
+                            <MenuItem Header="Enregister sous"/>
+                            <MenuItem Header="Imprimer la partition"/>
+                            <Separator/>
+                            <MenuItem Header="Mettre la partition en ligne"/>
+                            <MenuItem Header="Créer une vidéo de partition en ligne"/>
+                            <Separator/>
+                            <MenuItem Header="Importer">
+                                <MenuItem Header="Fichier audio"/>
+                                <MenuItem Header="Fichier MIDI"/>
+                                <MenuItem Header="Fichier MusicXML"/>
+                            </MenuItem>
+                            <MenuItem Header="Exporter">
+                                <MenuItem Header="Fichier Audio"/>
+                                <MenuItem Header="Image"/>
+                                <MenuItem Header="Fichier PDF"/>
+                                <MenuItem Header="Fichier MIDI"/>
+                                <MenuItem Header="Fichier MusicXML"/>
+                            </MenuItem>
+                            <Separator/>
+                            <MenuItem Header="Préférences"/>
+                            <Separator/>
+                            <MenuItem Header="Quitter"/>
+                        </MenuItem>
+
+                        <MenuItem Header="Edition">
+                            <MenuItem Header="Annuler"/>
+                            <MenuItem Header="Retablir"/>
+                            <MenuItem Header="Historique des modifications"/>
+                            <Separator/>
+                            <MenuItem Header="Couper"/>
+                            <MenuItem Header="Copier"/>
+                            <MenuItem Header="Coller"/>
+                            <Separator/>
+                            <MenuItem Header="Selectionner"/>
+                            <MenuItem Header="Selectionner tout"/>
+                            <MenuItem Header="Rechercher / remplacer"/>
+                            <MenuItem Header="Réorganiser"/>
+                            <MenuItem Header="Mesure automatique" IsCheckable="True" IsChecked="True"/>
+                            <MenuItem Header="Annotation perfomance" IsCheckable="True" IsChecked="False"/>
+                        </MenuItem>
+
+                        <MenuItem Header="MIDI">
+                            <MenuItem Header="Ouvrir l'éditeur MIDI"/>
+                            <MenuItem Header="Ouvrir l'éditeur de rythme"/>
+                            <MenuItem Header="Ouvrir l'éditeur de contrôle"/>
+                            <MenuItem Header="Enregistreur MIDI"/>
+                            <Separator/>
+                            <MenuItem Header="Transposer"/>
+                            <MenuItem Header="Paramètre MIDI"/>
+                        </MenuItem>
+
+                        <MenuItem Header="Editeur">
+                            <MenuItem Header="Options de l'éditeur"/>
+                            <MenuItem Header="Nouvelle partition"/>
+                            <MenuItem Header="Dupliquer partition"/>
+                            <MenuItem Header="Nouvelle version partition"/>
+                            <MenuItem Header="Supprimer partition"/>
+                            <MenuItem Header="Supprimer partitions vides"/>
+                            <Separator/>
+                            <MenuItem Header="Bibliothèque"/>
+                            <MenuItem Header="Marqueurs"/>
+                            <MenuItem Header="Explorateur"/>
+                            <MenuItem Header="Calculateur de tempo"/>
+                            <MenuItem Header="Curseur timecode"/>
+                            <MenuItem Header="Bloc notes"/>
+                        </MenuItem>
+                        
+                        <MenuItem Header="Decrypter">
+                            <MenuItem Header="Déchiffrer fichier audio"/>
+                            <MenuItem Header="Déchiffrer fichier MIDI"/>
+                            <MenuItem Header="Déchiffrer enregistrement audio"/>
+                            <MenuItem Header="Déchiffrer enregistrement MIDI"/>
+                            <Separator/>
+                            <MenuItem Header="Analyse harmonique"/>
+                            <MenuItem Header="Analyse de tonnalité"/>
+                            <MenuItem Header="Déchiffrage partition"/>
+                            <MenuItem Header="Correction de la hauteur"/>
+                        </MenuItem>
+                        <MenuItem Header="Aide">
+                            <MenuItem Header="Centre d'aide"/>
+                            <MenuItem Header="Vidéos tutoriels"/>
+                            <MenuItem Header="Contacter le support"/>
+                            <MenuItem Header="Vérifier les mises à jour"/>
+                            <MenuItem Header="À propos de TEXTA Score Edit"/>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
                 <Button>
-                    <Image Height="24" Source="/Images/nouveau.png"></Image>
+                    <Image Height="24" Source="/res/nouveau.png"></Image>
                 </Button>
                 <Button>
-                    <Image Height="24" Source="/Images/ouvrir.png"></Image>
+                    <Image Height="24" Source="/res/ouvrir.png"></Image>
                 </Button>
                 <Button Width="30">
-                    <Image Height="15" Margin="0" Source="/Images/save.png"></Image>
+                    <Image Height="15" Margin="0" Source="/res/save.png"></Image>
                 </Button>
                 <Button>
-                    <Image Height="24" Source="/Images/imprimer.png"></Image>
+                    <Image Height="24" Source="/res/imprimer.png"></Image>
                 </Button>
+                <Menu x:Name="Insertion" VerticalAlignment="Center" Background="White">
+                    <MenuItem Header="Insertion" Height="28">
+                        <MenuItem Header="Note">
+                            
+                        </MenuItem>
+                        <MenuItem Header="Intervalle">
+                            
+                        </MenuItem>
+                        <MenuItem Header="Mesure">
+                            
+                        </MenuItem>
+                        <MenuItem Header="Texte">
+                            
+                        </MenuItem>
+                        <MenuItem Header="Accords et symbole accords">
+                            
+                        </MenuItem>
+                    </MenuItem>
+
+                    <MenuItem Header="Affichage">
+                        <MenuItem Header="Options de partition"/>
+                        <MenuItem Header="Compte"/>
+                        <MenuItem Header="Centre d'aide"/>
+                    </MenuItem>
+                </Menu>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Aller au début"/>
+                <Button Content="Lecture"/>
+                <Button Content="Lecture en boucle"/>
+                <Button Content="Métronome"/>
+                <Button Content="Paramètre de lecture"/>
+                <Separator Width="1" Background="Gray" Margin="5,2,5,2"/>
                 <Button Content="Aide" Click="showHelpItem"/>
                 <Button Content="Compte"/>
             </StackPanel>
+            <Grid.ContextMenu>
+                <ContextMenu Background="White" Foreground="Black">
+                    <MenuItem Header="Paramètres de lecture">
+                        <MenuItem Header="Activer les entrées MIDI" IsCheckable="True"/>
+                        <MenuItem Header="Hauteur de la note de l'entrée MIDI">
+                            <MenuItem Header="Tonnalité écrite" IsCheckable="True"/>
+                            <MenuItem Header="Tonnalité réel" IsCheckable="True"/>
+                        </MenuItem>
+                    </MenuItem>
+                </ContextMenu>
+            </Grid.ContextMenu>
         </Grid>
 
         <!-- Zone principale -->
@@ -103,38 +247,33 @@
 
                     <Separator Width="1" Background="Gray" Margin="5,2,5,2"/>
 
-                    <Button Content="Jouer la partition"/>
-                    <Button Content="Jouer la partition depuis le début"/>
-
-                    <Separator Width="1" Background="Gray" Margin="5,2,5,2"/>
-
                     <RadioButton VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="Outils" Name="RadioSelection" Checked="Outil_Checked" IsChecked="True">
-                        <Image Height="24" Source="/Images/selections.png"/>
+                        <Image Height="24" Source="/res/selections.png"/>
                     </RadioButton>
                     <RadioButton VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="Outils" Name="RadioInsertion" Checked="Outil_Checked">
-                        <Image Height="24" Source="/Images/insertions.png"/>
+                        <Image Height="24" Source="/res/insertions.png"/>
                     </RadioButton>
                     <RadioButton VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="Outils" Name="RadioGomme" Checked="Outil_Checked">
-                        <Image Height="24" Source="/Images/gomme.png"/>
+                        <Image Height="24" Source="/res/gomme.png"/>
                     </RadioButton>
                     <RadioButton VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="Outils" Name="RadioCiseaux" Checked="Outil_Checked">
-                        <Image Height="24" Source="/Images/ciseaux.png"/>
+                        <Image Height="24" Source="/res/ciseaux.png"/>
                     </RadioButton>
                     <RadioButton VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="Outils" Name="RadioColle" Checked="Outil_Checked">
-                        <Image Height="24" Source="/Images/colle.png"/>
+                        <Image Height="24" Source="/res/colle.png"/>
                     </RadioButton>
                     <Separator Width="1" Background="Gray" Margin="5,2,5,2"/>
                     <Button>
-                        <Image Height="24" Source="/Images/note_supp.png"/>
+                        <Image Height="24" Source="/res/note_supp.png"/>
                     </Button>
                     <Button>
-                        <Image Height="24" Source="/Images/note_inf.png"/>
+                        <Image Height="24" Source="/res/note_inf.png"/>
                     </Button>
                     <Button>
-                        <Image Height="24" Source="/Images/oct_supp.png"/>
+                        <Image Height="24" Source="/res/oct_supp.png"/>
                     </Button>
                     <Button>
-                        <Image Height="24" Source="/Images/oct_inf.png"/>
+                        <Image Height="24" Source="/res/oct_inf.png"/>
                     </Button>
                     <Separator Width="1" Background="Gray" Margin="5,2,5,2" />
                     <Button x:Name="ButtonOptions" Content="Options" Click="ShowPartMenu"/>

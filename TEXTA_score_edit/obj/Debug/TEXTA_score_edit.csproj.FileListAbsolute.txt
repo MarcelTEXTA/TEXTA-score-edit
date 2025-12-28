@@ -6,11 +6,9 @@ C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\bin\Debug\TEXTA_s
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\bin\Debug\ICSharpCode.AvalonEdit.dll
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\bin\Debug\ICSharpCode.AvalonEdit.xml
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.csproj.AssemblyReference.cache
-C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\Preferences.g.cs
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\App.g.cs
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit_MarkupCompile.cache
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit_MarkupCompile.lref
-C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\Preferences.baml
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.g.resources
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.Properties.Resources.resources
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\TEXTA_score_edit.csproj.GenerateResource.cache
@@ -25,3 +23,15 @@ C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\ScoreEditor.g.cs
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\MainWindow.baml
 C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\ScoreEditor.baml
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\Preferences.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\Preferences.baml
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\BibliothequeView.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\HomeScreen.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\PartagesView.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\PartitionsLocalesView.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\PartitionsView.g.cs
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\BibliothequeView.baml
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\HomeScreen.baml
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\PartagesView.baml
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\PartitionsLocalesView.baml
+C:\Users\Family\source\repos\TEXTA_score_edit\TEXTA_score_edit\obj\Debug\src\ui\PartitionsView.baml

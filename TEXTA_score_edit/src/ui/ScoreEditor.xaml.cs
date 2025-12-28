@@ -3,6 +3,7 @@
 // Ce programme est seulement destiné à un usage éducatif et personnel.s
 
 using System;
+using System.Diagnostics.Eventing.Reader;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -252,192 +253,14 @@ namespace TEXTA_score_edit
             }
         }
 
-        private void ShowMenu(object sender, RoutedEventArgs e)
+        private void ShowHome(object sender, RoutedEventArgs e)
         {
-            if (sender is FrameworkElement)
-            {
-                ContextMenu menuBoutonActif = new ContextMenu();
+            FloatingFrame.Visibility = Visibility.Collapsed;
+        }
 
-                // =========================
-                // MENU FICHIER
-                // =========================
-                MenuItem menuFichier = new MenuItem { Header = "Fichier" };
-                MenuItem actionOuvrir = new MenuItem { Header = "Ouvrir un projet" };
-                //actionOuvrir.Click += OuvrirFichier;
-                MenuItem actionNouveauProjet = new MenuItem { Header = "Nouveau projet" };
-                //actionNouveauProjet.Click += NouveauProjet;
-                MenuItem actionFermerProjet = new MenuItem { Header = "Fermer le projet" };
-                MenuItem actionNouvelleVersionProjet = new MenuItem { Header = "Nouvelle version du projet" };
-                MenuItem actionEnregistrer = new MenuItem { Header = "Enregistrer" };
-                //actionEnregistrer.Click += EnregistrerFichier;
-                MenuItem actionEnregistrerSous = new MenuItem { Header = "Enregistrer sous" };
-                //actionEnregistrerSous.Click += EnregistrerSous;
-                MenuItem actionImprimer = new MenuItem { Header = "Imprimer la partition" };
-                //actionImprimer.Click += ImprimerPartition;
-
-                menuFichier.Items.Add(actionOuvrir);
-                menuFichier.Items.Add(actionNouveauProjet);
-                menuFichier.Items.Add(actionFermerProjet);
-                menuFichier.Items.Add(actionNouvelleVersionProjet);
-                menuFichier.Items.Add(actionEnregistrer);
-                menuFichier.Items.Add(actionEnregistrerSous);
-                menuFichier.Items.Add(actionImprimer);
-                menuFichier.Items.Add(new Separator());
-
-                MenuItem actionMettreEnLigne = new MenuItem { Header = "Mettre la partition en ligne" };
-                MenuItem actionVideoEnLigne = new MenuItem { Header = "Créer une vidéo de partition en ligne" };
-                menuFichier.Items.Add(actionMettreEnLigne);
-                menuFichier.Items.Add(actionVideoEnLigne);
-                menuFichier.Items.Add(new Separator());
-
-                // Importer
-                MenuItem menuImporter = new MenuItem { Header = "Importer" };
-                MenuItem actionImporterAudio = new MenuItem { Header = "Fichier audio" };
-                //actionImporterAudio.Click += ImporterAudio;
-                MenuItem actionImporterMidi = new MenuItem { Header = "Fichier MIDI" };
-                MenuItem actionImporterXml = new MenuItem { Header = "Fichier XML" };
-                menuImporter.Items.Add(actionImporterAudio);
-                menuImporter.Items.Add(actionImporterMidi);
-                menuImporter.Items.Add(actionImporterXml);
-                menuFichier.Items.Add(menuImporter);
-
-                // Exporter
-                MenuItem menuExporter = new MenuItem { Header = "Exporter" };
-                menuExporter.Items.Add(new MenuItem { Header = "Fichier audio" });
-                menuExporter.Items.Add(new MenuItem { Header = "Images" });
-                menuExporter.Items.Add(new MenuItem { Header = "Fichier PDF" });
-                menuExporter.Items.Add(new MenuItem { Header = "Fichier MIDI" });
-                menuExporter.Items.Add(new MenuItem { Header = "Fichier XML" });
-                menuFichier.Items.Add(menuExporter);
-
-                menuFichier.Items.Add(new Separator());
-                MenuItem actionPreferences = new MenuItem { Header = "Préférences" };
-                actionPreferences.Click += Preferences;
-                menuFichier.Items.Add(actionPreferences);
-
-                menuFichier.Items.Add(new Separator());
-                MenuItem actionQuitter = new MenuItem { Header = "Quitter" };
-                //actionQuitter.Click += QuitterApplication;
-                menuFichier.Items.Add(actionQuitter);
-
-                menuBoutonActif.Items.Add(menuFichier);
-
-                // =========================
-                // MENU ÉDITION
-                // =========================
-                MenuItem menuEdition = new MenuItem { Header = "Édition" };
-                MenuItem actionAnnuler = new MenuItem { Header = "Annuler" };
-                //actionAnnuler.Click += Annuler;
-                MenuItem actionRetablir = new MenuItem { Header = "Rétablir" };
-                MenuItem actionHistorique = new MenuItem { Header = "Historique" };
-
-                menuEdition.Items.Add(actionAnnuler);
-                menuEdition.Items.Add(actionRetablir);
-                menuEdition.Items.Add(actionHistorique);
-                menuEdition.Items.Add(new Separator());
-
-                menuEdition.Items.Add(new MenuItem { Header = "Copier" });
-                menuEdition.Items.Add(new MenuItem { Header = "Couper" });
-                menuEdition.Items.Add(new MenuItem { Header = "Coller" });
-                menuEdition.Items.Add(new Separator());
-                menuEdition.Items.Add(new MenuItem { Header = "Sélectionner" });
-                menuEdition.Items.Add(new MenuItem { Header = "Tout sélectionner" });
-                menuEdition.Items.Add(new MenuItem { Header = "Rechercher / Remplacer" });
-                menuEdition.Items.Add(new MenuItem { Header = "Réorganiser" });
-                menuEdition.Items.Add(new MenuItem { Header = "Mesures automatiques" });
-
-                MenuItem actionAnnotationPerf = new MenuItem { Header = "Annotation de performance" };
-                //actionAnnotationPerf.Click += AnnotationPerformance;
-                menuEdition.Items.Add(actionAnnotationPerf);
-
-                menuBoutonActif.Items.Add(menuEdition);
-
-                // =========================
-                // MENU MIDI
-                // =========================
-                MenuItem menuMIDI = new MenuItem { Header = "MIDI" };
-                menuMIDI.Items.Add(new MenuItem { Header = "Ouvrir l’éditeur MIDI" });
-                menuMIDI.Items.Add(new MenuItem { Header = "Ouvrir l’éditeur de rythme" });
-                menuMIDI.Items.Add(new MenuItem { Header = "Éditeur de contrôles" });
-                menuMIDI.Items.Add(new MenuItem { Header = "Enregistreur MIDI" });
-                menuMIDI.Items.Add(new Separator());
-                menuMIDI.Items.Add(new MenuItem { Header = "Transposer" });
-                menuMIDI.Items.Add(new MenuItem { Header = "Paramètres MIDI" });
-                menuBoutonActif.Items.Add(menuMIDI);
-
-                // =========================
-                // MENU PROJET
-                // =========================
-                MenuItem menuProjet = new MenuItem { Header = "Projet" };
-                MenuItem actionNouvellePartition = new MenuItem { Header = "Nouvelle partition" };
-                //actionNouvellePartition.Click += NouvellePartition;
-                menuProjet.Items.Add(actionNouvellePartition);
-                menuProjet.Items.Add(new MenuItem { Header = "Dupliquer la partition" });
-                menuProjet.Items.Add(new MenuItem { Header = "Nouvelle version de la partition" });
-                menuProjet.Items.Add(new MenuItem { Header = "Supprimer la partition" });
-                menuProjet.Items.Add(new MenuItem { Header = "Supprimer toutes les partitions vides" });
-                menuProjet.Items.Add(new Separator());
-                menuProjet.Items.Add(new MenuItem { Header = "Bibliothèque" });
-                menuProjet.Items.Add(new MenuItem { Header = "Marqueurs" });
-                menuProjet.Items.Add(new MenuItem { Header = "Explorateur" });
-                menuProjet.Items.Add(new MenuItem { Header = "Calculateur de tempo" });
-                menuProjet.Items.Add(new MenuItem { Header = "Curseur timecode" });
-                menuProjet.Items.Add(new MenuItem { Header = "Bloc-notes" });
-                menuBoutonActif.Items.Add(menuProjet);
-
-                // =========================
-                // MENU DÉCHIFFRER
-                // =========================
-                MenuItem menuDechiffrer = new MenuItem { Header = "Déchiffrer" };
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Déchiffrer fichier audio" });
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Déchiffrer MIDI en direct" });
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Déchiffrer fichier MIDI" });
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Déchiffrer enregistrement audio" });
-                menuDechiffrer.Items.Add(new Separator());
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Analyse harmonique" });
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Analyse de tonalité" });
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Scan déchiffrage de partition" });
-                menuDechiffrer.Items.Add(new MenuItem { Header = "Correcteur de hauteur" });
-                menuBoutonActif.Items.Add(menuDechiffrer);
-
-                // =========================
-                // MENU PARTITION
-                // =========================
-                MenuItem menuPartition = new MenuItem { Header = "Partition" };
-                MenuItem actionOptionsPartition = new MenuItem { Header = "Options de partition" };
-                //actionOptionsPartition.Click += OptionsPartition;
-                menuPartition.Items.Add(actionOptionsPartition);
-                menuPartition.Items.Add(new Separator());
-                menuPartition.Items.Add(new MenuItem { Header = "Mode page" });
-                menuPartition.Items.Add(new Separator());
-                menuPartition.Items.Add(new MenuItem { Header = "Grouper / dégrouper les notes" });
-                menuPartition.Items.Add(new MenuItem { Header = "Convertir en note ornementale" });
-                menuPartition.Items.Add(new MenuItem { Header = "Définir N-olet" });
-                menuPartition.Items.Add(new MenuItem { Header = "Éclater" });
-                menuPartition.Items.Add(new Separator());
-                menuPartition.Items.Add(new MenuItem { Header = "Fusionner les portées" });
-                menuPartition.Items.Add(new MenuItem { Header = "Extraire la voix" });
-                menuPartition.Items.Add(new MenuItem { Header = "Insérer un legato" });
-                menuPartition.Items.Add(new MenuItem { Header = "Afficher / Masquer" });
-                menuPartition.Items.Add(new MenuItem { Header = "Inverser" });
-                menuBoutonActif.Items.Add(menuPartition);
-
-                // =========================
-                // MENU AIDE
-                // =========================
-                MenuItem menuAide = new MenuItem { Header = "Aide" };
-                menuAide.Items.Add(new MenuItem { Header = "Documentation" });
-                menuAide.Items.Add(new MenuItem { Header = "Foire aux questions" });
-                menuAide.Items.Add(new Separator());
-                menuAide.Items.Add(new MenuItem { Header = "Crédits" });
-                MenuItem actionAPropos = new MenuItem { Header = "À propos de TEXTA score edit" };
-                actionAPropos.Click += APropos;
-                menuAide.Items.Add(actionAPropos);
-                menuBoutonActif.Items.Add(menuAide);
-
-                //menuBoutonActif.PlacementTarget = this;
-                menuBoutonActif.IsOpen = true;
-            }
+        private void CloseFloatingFrame(object sender, RoutedEventArgs e)
+        {
+            FloatingFrame.Visibility = Visibility.Hidden;
         }
 
         private void ShowPartMenu(object sender, RoutedEventArgs e)
