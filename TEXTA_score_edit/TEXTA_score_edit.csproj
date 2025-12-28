@@ -87,10 +87,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="src\core\actions\NewFile.cs" />
-    <Compile Include="src\core\actions\OpenFile.cs" />
-    <Compile Include="src\core\actions\SaveAsFile.cs" />
-    <Compile Include="src\core\actions\SaveFile.cs" />
+    <Compile Include="src\core\actions\edit\CopyAction.cs" />
+    <Compile Include="src\core\actions\edit\CutAction.cs" />
+    <Compile Include="src\core\actions\edit\PasteAction.cs" />
+    <Compile Include="src\core\actions\edit\RedoAction.cs" />
+    <Compile Include="src\core\actions\edit\ReorganiseAction.cs" />
+    <Compile Include="src\core\actions\edit\SearchAtion.cs" />
+    <Compile Include="src\core\actions\edit\SelectAction.cs" />
+    <Compile Include="src\core\actions\edit\SelectAllAction.cs" />
+    <Compile Include="src\core\actions\edit\SetAnnotationPerfomance.cs" />
+    <Compile Include="src\core\actions\edit\SetAutomaticMeasure.cs" />
+    <Compile Include="src\core\actions\edit\ShowHistoricAction.cs" />
+    <Compile Include="src\core\actions\edit\UndoAction.cs" />
+    <Compile Include="src\core\actions\file\CreateOnlineVideoScore.cs" />
+    <Compile Include="src\core\actions\file\export\ExportAudioFile.cs" />
+    <Compile Include="src\core\actions\file\export\ExportMidiFile.cs" />
+    <Compile Include="src\core\actions\file\export\ExportPdFile.cs" />
+    <Compile Include="src\core\actions\file\export\ExportPicture.cs" />
+    <Compile Include="src\core\actions\file\export\ExportXmlFile.cs" />
+    <Compile Include="src\core\actions\file\import\ImportAudioFile.cs" />
+    <Compile Include="src\core\actions\file\import\ImportMidiFile.cs" />
+    <Compile Include="src\core\actions\file\import\ImportXmlFile.cs" />
+    <Compile Include="src\core\actions\file\NewFile.cs" />
+    <Compile Include="src\core\actions\file\NewFileVersion.cs" />
+    <Compile Include="src\core\actions\file\OpenFile.cs" />
+    <Compile Include="src\core\actions\file\PrintScore.cs" />
+    <Compile Include="src\core\actions\file\SaveAsFile.cs" />
+    <Compile Include="src\core\actions\file\SaveFile.cs" />
+    <Compile Include="src\core\actions\file\SetOnlineScore.cs" />
     <Compile Include="src\ui\BibliothequeView.xaml.cs">
       <DependentUpon>BibliothequeView.xaml</DependentUpon>
     </Compile>
@@ -215,6 +239,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\app\" />
+    <Folder Include="src\core\actions\MIDI\" />
     <Folder Include="src\playback\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

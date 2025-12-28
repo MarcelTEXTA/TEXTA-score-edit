@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TEXTA_score_edit.exe" size="131048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TEXTA_score_edit.exe" size="132584">
       <assemblyIdentity name="TEXTA_score_edit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UHC0DuA62Hk74xjNFvRuqVc8F5zfzlfDQEZIkq08+3g=</dsig:DigestValue>
+        <dsig:DigestValue>WH3MzzKC65P6ucEtcdbS0E+b02oZX6boF1eGpMJbMVY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
