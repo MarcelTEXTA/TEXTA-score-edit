@@ -23,13 +23,23 @@ namespace TEXTA_score_edit.src.ui
         public HomeScreen()
         {
             InitializeComponent();
+            Loaded += HomeScreen_Loaded;
+
+        }
+        
+        private void HomeScreen_Loaded(object sender, RoutedEventArgs e)
+        {
+            NavigationListBox.SelectedIndex = 0;
         }
 
         private void NavigationListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (MainContent == null)
+                return;
+
             if (NavigationListBox.SelectedItem is ListBoxItem item)
             {
-                switch (item.Name)
+                switch (item.Content?.ToString())
                 {
                     case "Partitions":
                         MainContent.Content = new PartitionsView();
@@ -49,5 +59,6 @@ namespace TEXTA_score_edit.src.ui
                 }
             }
         }
+
     }
 }

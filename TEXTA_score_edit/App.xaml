@@ -4,6 +4,41 @@
              xmlns:local="clr-namespace:TEXTA_score_edit"
              StartupUri="src/ui/MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="TextBoxWithPlaceholder" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <!-- Placeholder -->
+                            <TextBlock x:Name="Placeholder"
+                               Text="{TemplateBinding Tag}"
+                               Foreground="Gray"
+                               Margin="5,2"
+                               IsHitTestVisible="False"
+                               Visibility="Collapsed"/>
+
+                            <!-- Zone de saisie -->
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <!-- Affiche le placeholder si vide -->
+                            <Trigger Property="Text" Value="">
+                                <Setter TargetName="Placeholder"
+                                Property="Visibility"
+                                Value="Visible"/>
+                            </Trigger>
+
+                            <!-- Cache au focus -->
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="Placeholder"
+                                Property="Visibility"
+                                Value="Collapsed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

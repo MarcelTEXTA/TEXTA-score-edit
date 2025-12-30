@@ -6,17 +6,26 @@
              xmlns:local="clr-namespace:TEXTA_score_edit.src.ui"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <StackPanel Orientation="Horizontal">
-        <StackPanel Width="200" Background="#EEE" >
-            <ListBox x:Name="NavigationListBox" SelectionChanged="NavigationListBox_SelectionChanged">
-                <ListBoxItem Content="Partitions" IsSelected="True"/>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Menu gauche -->
+        <StackPanel Grid.Column="0" Background="#EEE">
+            <ListBox x:Name="NavigationListBox"
+                 SelectionChanged="NavigationListBox_SelectionChanged">
+                <ListBoxItem Content="Partitions"/>
                 <ListBoxItem Content="Partagés"/>
                 <ListBoxItem Content="Partitions locales"/>
                 <ListBoxItem Content="Bibliothèque"/>
             </ListBox>
         </StackPanel>
-        <StackPanel Orientation="Vertical" Margin="10">
-            <ContentControl x:Name="MainContent"/>
-        </StackPanel>
-    </StackPanel>
+
+        <!-- Contenu droite -->
+        <ContentControl x:Name="MainContent"
+                    Grid.Column="1"
+                    Margin="10"/>
+    </Grid>
 </UserControl>

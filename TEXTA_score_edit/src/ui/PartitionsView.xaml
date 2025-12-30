@@ -1,19 +1,118 @@
 ﻿<UserControl x:Class="TEXTA_score_edit.src.ui.PartitionsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:TEXTA_score_edit.src.ui"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <StackPanel Orientation="Vertical">
-        <Grid>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <TextBlock Text="Partition"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <TextBox/>
-            </StackPanel>
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Partitions"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"/>
+
+            <TextBox Grid.Column="1"
+                     Width="180"
+                     Margin="10,0,0,0"
+                     Style="{StaticResource TextBoxWithPlaceholder}"
+                     Tag="Rechercher"
+                     Text="{Binding MonTexte, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
-    </StackPanel>
+
+        <TabControl Grid.Row="1">
+
+            <TabItem Header="Récents">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid HorizontalAlignment="Left" Grid.Column="0">
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Nouvelle partition" Margin="5 0"/>
+                                <Button Content="Ouvrir une autre partition" Margin="5 0"/>
+                            </StackPanel>
+                        </Grid>
+                        
+
+                        <StackPanel Grid.Column="1"
+                                    Orientation="Horizontal">
+                            <RadioButton Content="Vue en liste" IsChecked="True"/>
+                            <RadioButton Content="Vue en grille" Margin="10,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Border Grid.Row="1"
+                            Margin="0,10,0,0"
+                            BorderBrush="Transparent"
+                            BorderThickness="1">
+                        <TextBlock Text="Contenu des partitions"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Opacity="0.5"/>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Partitions en lignes">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid HorizontalAlignment="Left" Grid.Column="0">
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Nouvelle partition" Margin="5 0"/>
+                                <Button Content="Ouvrir une autre partition" Margin="5 0"/>
+                                <Button Content="Gérer les partitions" Margin="5 0"/>
+                            </StackPanel>
+                        </Grid>
+
+                        <StackPanel Grid.Column="1"
+                                    Orientation="Horizontal">
+                            <RadioButton Content="Vue en liste" IsChecked="True"/>
+                            <RadioButton Content="Vue en grille" Margin="10,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Border Grid.Row="1"
+                            Margin="0,10,0,0"
+                            BorderBrush="Transparent"
+                            BorderThickness="1">
+                        <TextBlock Text="Contenu des partitions"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Opacity="0.5"/>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
 </UserControl>

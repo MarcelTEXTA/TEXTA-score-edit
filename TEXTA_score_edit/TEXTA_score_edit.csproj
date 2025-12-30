@@ -87,6 +87,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="src\core\actions\decrypter\AnalyseHarmonique.cs" />
+    <Compile Include="src\core\actions\decrypter\AnalyseTonnalite.cs" />
+    <Compile Include="src\core\actions\decrypter\AudioFile.cs" />
+    <Compile Include="src\core\actions\decrypter\AudioSaver.cs" />
+    <Compile Include="src\core\actions\decrypter\CorrectionAuteur.cs" />
+    <Compile Include="src\core\actions\decrypter\DechiffragePartition.cs" />
+    <Compile Include="src\core\actions\decrypter\MidiFile.cs" />
+    <Compile Include="src\core\actions\decrypter\MidiSaver.cs" />
     <Compile Include="src\core\actions\edit\CopyAction.cs" />
     <Compile Include="src\core\actions\edit\CutAction.cs" />
     <Compile Include="src\core\actions\edit\PasteAction.cs" />
@@ -99,6 +107,18 @@
     <Compile Include="src\core\actions\edit\SetAutomaticMeasure.cs" />
     <Compile Include="src\core\actions\edit\ShowHistoricAction.cs" />
     <Compile Include="src\core\actions\edit\UndoAction.cs" />
+    <Compile Include="src\core\actions\edotor\DeleteEmptyPartitions.cs" />
+    <Compile Include="src\core\actions\edotor\DeletePartition.cs" />
+    <Compile Include="src\core\actions\edotor\DuplicePartition.cs" />
+    <Compile Include="src\core\actions\edotor\NewPartition.cs" />
+    <Compile Include="src\core\actions\edotor\NewPartitionVersion.cs" />
+    <Compile Include="src\core\actions\edotor\ShowCursorTimeCode.cs" />
+    <Compile Include="src\core\actions\edotor\ShowEditorOptions.cs" />
+    <Compile Include="src\core\actions\edotor\ShowExplorer.cs" />
+    <Compile Include="src\core\actions\edotor\ShowLibrary.cs" />
+    <Compile Include="src\core\actions\edotor\ShowMarquersOptions.cs" />
+    <Compile Include="src\core\actions\edotor\ShowNotepad.cs" />
+    <Compile Include="src\core\actions\edotor\ShowTempoCalculator.cs" />
     <Compile Include="src\core\actions\file\CreateOnlineVideoScore.cs" />
     <Compile Include="src\core\actions\file\export\ExportAudioFile.cs" />
     <Compile Include="src\core\actions\file\export\ExportMidiFile.cs" />
@@ -115,6 +135,12 @@
     <Compile Include="src\core\actions\file\SaveAsFile.cs" />
     <Compile Include="src\core\actions\file\SaveFile.cs" />
     <Compile Include="src\core\actions\file\SetOnlineScore.cs" />
+    <Compile Include="src\core\actions\MIDI\MidiSaveAction.cs" />
+    <Compile Include="src\core\actions\MIDI\OpenControlsEditor.cs" />
+    <Compile Include="src\core\actions\MIDI\OpenMidiEditor.cs" />
+    <Compile Include="src\core\actions\MIDI\OpenythmeEditor.cs" />
+    <Compile Include="src\core\actions\MIDI\ShowMidiSettings.cs" />
+    <Compile Include="src\core\actions\MIDI\TransposeAction.cs" />
     <Compile Include="src\ui\BibliothequeView.xaml.cs">
       <DependentUpon>BibliothequeView.xaml</DependentUpon>
     </Compile>
@@ -132,9 +158,6 @@
     </Compile>
     <Compile Include="src\ui\Preferences.xaml.cs">
       <DependentUpon>Preferences.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="src\ui\ScoreEditor.xaml.cs">
-      <DependentUpon>ScoreEditor.xaml</DependentUpon>
     </Compile>
     <Page Include="src\ui\BibliothequeView.xaml">
       <SubType>Designer</SubType>
@@ -169,10 +192,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="src\ui\Preferences.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="src\ui\ScoreEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -239,7 +258,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\app\" />
-    <Folder Include="src\core\actions\MIDI\" />
     <Folder Include="src\playback\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,7 +6,40 @@
              xmlns:local="clr-namespace:TEXTA_score_edit.src.ui"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid HorizontalAlignment="Left" Grid.Column="0">
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Partager vos partitions"/>
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Grid.Column="1"
+                    Orientation="Horizontal">
+                <RadioButton Content="Vue en liste" IsChecked="True"/>
+                <RadioButton Content="Vue en grille" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Grid>
+
+        <Border Grid.Row="1"
+            Margin="0,10,0,0"
+            BorderBrush="Transparent"
+            BorderThickness="1">
+            <TextBlock Text="Contenu des partitions"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Opacity="0.5"/>
+        </Border>
     </Grid>
 </UserControl>
